@@ -1,7 +1,3 @@
-
-
-
-
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
@@ -13,7 +9,10 @@ require('./db/connection');
 const pfServer = express();
 
 // backend to frontend middleware
-pfServer.use(cors());
+pfServer.use(cors({
+  origin: "https://projectfair-frontend-ogpazujqz-ayana-ms-projects.vercel.app"
+}));
+
 
 // convert backend data to JSON
 pfServer.use(express.json());
