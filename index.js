@@ -10,7 +10,7 @@ const pfServer = express();
 
 // backend to frontend middleware
 pfServer.use(cors({
-  origin: "https://projectfair-frontend-ogpazujqz-ayana-ms-projects.vercel.app"
+  origin: "https://projectfair-frontend-jade.vercel.app"
 }));
 
 
